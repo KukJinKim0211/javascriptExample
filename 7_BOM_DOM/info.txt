@@ -2,3 +2,5 @@
 
 -DocumentFragment : DOM 요소의 변경 시, 버퍼를 통해 한꺼번에 업데이트
 -SiblingTest : 같은 Parent를 가진 노드에서의 동작
+-DomNodeInsert : DOM 요소 추가
+-DomNodeRemove : DOM 요소 제거
