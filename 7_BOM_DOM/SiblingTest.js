@@ -9,6 +9,8 @@
 */
 
 const div = document.querySelector("#div3");
+// 첫번째 자식 노드 선택
 const divChild = div.children[0];
 console.log(div);
+// 첫번째 자식 이후의 노드를 반환. 공백 노드 제거를 위해 2번 호출
 console.log(divChild.nextSibling.nextSibling);
