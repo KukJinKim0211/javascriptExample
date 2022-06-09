@@ -18,6 +18,6 @@ pEle.addEventListener('click', (ev) => {
 aEle.addEventListener('click', (ev) => {
   console.log('a Click');
 
-  //
+  // 목적지 href로 가는 이벤트를 차단
   ev.preventDefault();
 })
