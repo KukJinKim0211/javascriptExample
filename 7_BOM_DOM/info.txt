@@ -4,3 +4,5 @@
 -SiblingTest : 같은 Parent를 가진 노드에서의 동작
 -DomNodeInsert : DOM 요소 추가
 -DomNodeRemove : DOM 요소 제거
+-DomEventTarget : 이벤트 시, target, currentTarget의 차이점
+-DomEventCancel : 이벤트 시, preventDefault, stopProppagation 의 차이점
