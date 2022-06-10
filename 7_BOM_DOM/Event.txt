@@ -6,3 +6,32 @@ User Interface 이벤트 : 문서나 요소의 조작 시 발생하는 이벤트
 - select : input, textarea 요소 안에 작성된 텍스트를 선택할 경우 발생
 
 Focus 이벤트 : 대상이 포커스를 받거나 잃을 때 발생하는 이벤트
+- focusin : 포커스를 받으려 할 때 이벤트 발생. (target) : 이벤트를 받을 요소
+- focusout : 포커스를 잃으려 할 때 이벤트 발생. (target) : 이벤트를 잃게 될 요소
+- focus : 대상이 포커스를 받은 뒤 이벤트가 발생
+- blur : 대상이 포커스를 잃은 뒤 이벤트가 발생
+이벤트의 전파
+A로 포커스 -> A:focusin -> A:focus -> B로 포커스 -> A:focusout -> B:focusin -> A:blur -> B:focus
+
+Mouse 이벤트 : 포인팅 입력 장치를 탐지. 항상 가장 중첩된 요소를 대상으로 지정
+- mousedown : 타깃을 눌렀을 시 발생. preventDefault() 시, click 같은 이후 이벤트를 방지 가능
+- mouseup : 타깃을 눌렀던 포인트가 해제되었을 때 발생. preventDefault() 시, click 같은 이후 이벤트를 방지 가능
+- click : 타깃에 클릭 동작을 했을 때 발생. mousedown, mouseup 이벤트 발생 후 발생
+- dblclick : 더블클릭을 했을 경우 발생. click 이벤트 동작을 취소해도 이벤트 동작
+- mousemove : 타깃 내에서 포인터가 이동할 경우 발생.
+- mouseenter : 타깃으로 포인터가 이동할 때 발생. 자식 요소에 이동할 때는 발생하지 않는다
+- mouseleave : 타깃 밖으로 이동할 때 발생.
+- mouseover : mouseenter과 동일한 조건. 이벤트의 버블링이 발생
+- mouseout : mouseleave와 동일한 조건. 이벤트의 버블링이 발생
+client*/offset*/page* 속성 : Event의 객체에 이벤트가 발생한 시기의 마우스 좌표를 제공
+
+Input 이벤트 : 편집 가능한 영역에서 DOM 요소가 업데이트될 때 발생
+- beforeInput : 입력 후 DOM 요소에 업데이트 되기 전 이벤트 발생
+- input : 입력 후 DOM 요소에 업데이트 된 뒤 이벤트가 발생
+
+키보드 이벤트
+- keydown : 키보드를 누를 때 발생
+- keyup : 누른 키를 뗄 때 발생
+key 속성 : 입력된 키를 리턴
+ctrlKey/altKey/shiftKey 속성 : 해당 키를 같이 입력했는지 boolean값으로 리턴
+
