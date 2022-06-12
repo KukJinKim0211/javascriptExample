@@ -1,0 +1,47 @@
+header {
+  color: #7d99a3;
+  text-align: center;
+  padding: 50px;
+}
+
+header h1 {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+header p {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.content {
+  display: flex;
+  max-width: 1280px;
+  margin: auto;
+  padding: 50px;
+  color: thistle;
+}
+
+.content .top-news-section {
+  width: 75%;
+  padding: 10px;
+}
+
+.content .top-news-section h2 {
+  color: #efbb35;
+  font-size: 36px;
+}
+
+.content aside {
+  width: 25%;
+  margin: 10px;
+  padding: 20px;
+  border-left: 1px solid #5a6268;
+}
+
+footer {
+  text-align: center;
+  padding-bottom: 50px;
+  color: #faebd7;
+}
