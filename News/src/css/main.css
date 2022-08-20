@@ -40,6 +40,17 @@ header p {
   border-left: 1px solid #5a6268;
 }
 
+.spinner-area {
+  display: flex;
+  min-height: 400px;
+  justify-content: center;
+  align-items: center;
+}
+
+.spinner-area img {
+  width: 50px;
+}
+
 footer {
   text-align: center;
   padding-bottom: 50px;

@@ -6,3 +6,7 @@
 -DomNodeRemove : DOM 요소 제거
 -DomEventTarget : 이벤트 시, target, currentTarget의 차이점
 -DomEventCancel : 이벤트 시, preventDefault, stopProppagation 의 차이점
+-EventListener : 이벤트 리스너 방식 3가지 정리
+-Bubbling : 버블링 예제
+-Capturing : 캡처링 예제
+-EventDelegation : 이벤트 위임 예제 
